@@ -42,6 +42,16 @@ public class Bank {
         return phoneNumber;
     }
 
+    public Bank(String accountNumber, double balance, String customerName, String email, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Bank (){}
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
@@ -57,7 +67,7 @@ public class Bank {
     public void withdraw (double value, String customerName, String accountNumber){
         if (!customerName.equals(this.customerName) || !accountNumber.equals(this.accountNumber))
             System.out.println("Incorrect data");
-        else if (value >= this.balance)
+        else if (value > this.balance)
             System.out.println("Invalid Value");
         else this.balance -= value;
     }
