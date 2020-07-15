@@ -8,11 +8,13 @@ public class MinAndMax {
 
         boolean hasNextInt;
 
-        int largeNumber = Integer.MIN_VALUE;
+        int largeNumber = Integer.MAX_VALUE;
 
-        int smallNumber = Integer.MAX_VALUE;
+        int smallNumber = Integer.MIN_VALUE;
 
         int number;
+
+        boolean first = true;
 
         while (true){
 
@@ -22,6 +24,12 @@ public class MinAndMax {
             if (hasNextInt){
 
                 number = scanner.nextInt();
+
+                if (first){
+                    first = false;
+                    smallNumber = number;
+                    largeNumber = number;
+                }
 
                 if (number < smallNumber)
                     smallNumber = number;
