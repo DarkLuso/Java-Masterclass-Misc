@@ -28,6 +28,7 @@ public class InputChallenge {
         }
 
         System.out.println("Sum = " + sum);
+        scanner.close();
 
 
     }
