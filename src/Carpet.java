@@ -1,15 +1,6 @@
 public class Carpet {
 
-    private int width;
-    private int length;
-    private String texture;
     private boolean isDirty;
-
-    public Carpet(int width, int length, String texture) {
-        this.width = width;
-        this.length = length;
-        this.texture = texture;
-    }
 
     public void cleanCarpet (){
         if (isDirty){
@@ -23,5 +14,15 @@ public class Carpet {
     public void soiling (){
         isDirty = true;
         System.out.println("your soiling the carpet");
+    }
+
+    public boolean isClean (){
+        if (isDirty) {
+            System.out.println("The carpet is dirty");
+            return false;
+        }
+
+        System.out.println("The carpet is clean");
+        return true;
     }
 }
