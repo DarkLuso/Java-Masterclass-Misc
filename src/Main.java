@@ -25,12 +25,14 @@ public class Main {
 //        DeluxeBurger sas = new DeluxeBurger();
 //        sas.addAdditional(true,true,true,true);
 //        sas.getPrice();
-        ArraysChallenge array = new  ArraysChallenge();
-        array.printArray();
-        array.getIntegers(8);
-        array.printArray();
-        array.sortIntegers();
-        array.printArray();
+//        ArraysChallenge array = new  ArraysChallenge();
+//        array.printArray();
+//        array.getIntegers(8);
+//        array.printArray();
+//        array.sortIntegers();
+//        array.printArray();
+        int[] array = MinimumChallenge.readIntegers(9);
+        System.out.println(MinimumChallenge.findMin(array));;
     }
 
 }
