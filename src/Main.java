@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -31,8 +33,11 @@ public class Main {
 //        array.printArray();
 //        array.sortIntegers();
 //        array.printArray();
-        int[] array = MinimumChallenge.readIntegers(9);
-        System.out.println(MinimumChallenge.findMin(array));;
+//        int[] array = MinimumChallenge.readIntegers(9);
+//        System.out.println(MinimumChallenge.findMin(array));
+        int [] newArray = {1,2,3,4,5,6,7,8};
+        ReverseArray.reverse(newArray);
+        System.out.println(Arrays.toString(newArray));
     }
 
 }
