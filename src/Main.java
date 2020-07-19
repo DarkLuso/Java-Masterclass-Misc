@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -35,9 +33,14 @@ public class Main {
 //        array.printArray();
 //        int[] array = MinimumChallenge.readIntegers(9);
 //        System.out.println(MinimumChallenge.findMin(array));
-        int [] newArray = {1,2,3,4,5,6,7,8};
-        ReverseArray.reverse(newArray);
-        System.out.println(Arrays.toString(newArray));
+//        MobilePhone myPhone = new MobilePhone();
+//        myPhone.addContact("Johnny","51 999223478");
+//        myPhone.addContact("CJ","51 997788345");
+//        myPhone.addContact("Johnny","51 999223478");
+        MobilePhone myPhone = new MobilePhone();
+        myPhone.startPhone();
+
+
     }
 
 }
