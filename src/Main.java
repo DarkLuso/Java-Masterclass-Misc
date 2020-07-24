@@ -63,12 +63,14 @@ public class Main {
 //
 //
 //        }
-        Player jack = new Player("Jack",13,12);
-        saveObject(jack);
-        System.out.println(jack.toString());
-        loadObject(jack);
-        saveObject(jack);
-
+//        Player jack = new Player("Jack",13,12);
+//        saveObject(jack);
+//        System.out.println(jack.toString());
+//        loadObject(jack);
+//        saveObject(jack);
+        MyLinkedList myLinkedList = new MyLinkedList(null);
+        myLinkedList.traverse(myLinkedList.getRoot());
+        
 
    }
 
