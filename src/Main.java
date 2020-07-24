@@ -1,3 +1,5 @@
+import com.example.series.series;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -68,9 +70,12 @@ public class Main {
 //        System.out.println(jack.toString());
 //        loadObject(jack);
 //        saveObject(jack);
-        MyLinkedList myLinkedList = new MyLinkedList(null);
-        myLinkedList.traverse(myLinkedList.getRoot());
-        
+//        MyLinkedList myLinkedList = new MyLinkedList(null);
+//        myLinkedList.traverse(myLinkedList.getRoot());
+        int number = 5;
+        System.out.println(series.fibonacci(number));
+        System.out.println(series.factorial(number));
+        System.out.println(series.nSum(number));
 
    }
 
